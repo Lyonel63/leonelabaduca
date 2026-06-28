@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copa Mundial 2026 - Portal Dinámico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <audio id="audio-estadio" src="audios/audio_estadio.mp3" preload="auto"></audio>
+    <audio id="audio-gol" src="audios/audio_gol.mp3" preload="auto"></audio>
+
+    <div class="app-contenedor">
+        
+        <header class="hero-header">
+            <div class="brillo-morado"></div>
+            <h1>MUNDIAL <strong>2026</strong></h1>
+            <p>La experiencia inmersiva del fútbol</p>
+        </header>
+
+        <main>
+            <section class="panel">
+                <div class="panel-header">
+                    <h2>Formato del Torneo y Eliminatorias</h2>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-box">
+                        <span class="stat-num">48</span>
+                        <span class="stat-text">Selecciones</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-num">16</span>
+                        <span class="stat-text">Sedes</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-num">39</span>
+                        <span class="stat-text">Días de juego</span>
+                    </div>
+                </div>
+
+                <div class="fases-container">
+                    <div class="fase-tarjeta interactiva">
+                        <h3>Dieciseisavos</h3>
+                        <div class="cruce-oculto">16 llaves<br>(32 equipos)</div>
+                    </div>
+                    <div class="fase-tarjeta interactiva">
+                        <h3>Octavos</h3>
+                        <div class="cruce-oculto">8 llaves<br>(16 equipos)</div>
+                    </div>
+                    <div class="fase-tarjeta interactiva">
+                        <h3>Cuartos</h3>
+                        <div class="cruce-oculto">4 llaves<br>(8 equipos)</div>
+                    </div>
+                    <div class="fase-tarjeta interactiva">
+                        <h3>Semifinales</h3>
+                        <div class="cruce-oculto">2 llaves<br>(4 equipos)</div>
+                    </div>
+                    <div class="fase-tarjeta interactiva final-fase">
+                        <h3>Final</h3>
+                        <div class="cruce-oculto">El partido<br>definitivo</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="panel">
+                <div class="panel-header">
+                    <h2>Resultados en Vivo y Calendario</h2>
+                </div>
+                <div class="partidos-grid">
+                    <div class="match-card">
+                        <div class="match-status status-azul">Gran Inauguración</div>
+                        <div class="match-teams">
+                            <div class="team"><span>México</span></div>
+                            <div class="score">vs</div>
+                            <div class="team"><span>Sudáfrica</span></div>
+                        </div>
+                        <div class="match-footer">
+                            <span>📍 Estadio Ciudad de México</span>
+                        </div>
+                    </div>
+
+                    <div class="match-card" 
+                        onmouseenter="document.getElementById('audio-estadio').play()" 
+                        onmouseleave="document.getElementById('audio-estadio').pause();">
+                        <div class="match-status anim-pulse">Fase de Grupos en juego</div>
+                        <div class="match-teams">
+                            <div class="team"><span>Brasil</span></div>
+                            <div class="score">vs</div>
+                            <div class="team"><span>Escocia</span></div>
+                        </div>
+                        <div class="match-footer">
+                            <span>📍 En curso</span>
+                        </div>
+                    </div>
+
+                    <div class="match-card"
+                        onmouseenter="document.getElementById('audio-gol').play()" 
+                        onmouseleave="document.getElementById('audio-gol').pause();">
+                        <div class="match-status anim-pulse">Fase de Grupos en juego</div>
+                        <div class="match-teams">
+                            <div class="team"><span>Alemania</span></div>
+                            <div class="score">vs</div>
+                            <div class="team"><span>Ecuador</span></div>
+                        </div>
+                        <div class="match-footer">
+                            <span>📍 En curso</span>
+                        </div>
+                    </div>
+
+                    <div class="match-card card-final">
+                        <div class="match-status status-dorado">Gran Final</div>
+                        <div class="match-teams match-teams-final">
+                            <div class="team"><span>Por definirse</span></div>
+                        </div>
+                        <div class="match-footer">
+                            <span>📍 MetLife Stadium, NY/NJ</span>
+                            <span class="fecha-final">📅 Dom 19 de julio</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="panel">
+                <div class="panel-header">
+                    <h2>Highlights y Resúmenes</h2>
+                </div>
+                
+                <div class="video-grid">
+                    <div class="video-card">
+                        <video controls width="100%">
+                            <source src="videos/Highlights _ Mexico 2-0 South Africa _ FIFA World Cup 2026™.mp4" type="video/mp4">
+                            Tu navegador no soporta el formato de video.
+                        </video>
+                        <p>México vs Sudáfrica (Inauguración)</p>
+                    </div>
+                    
+                    <div class="video-card">
+                        <video controls width="100%">
+                            <source src="videos/TODOS LOS GOLES DEL DÍA 1 DE LA COPA DEL MUNDO 2026 _ ¿CUÁL FUE EL MEJOR_.mp4" type="video/mp4">
+                            Tu navegador no soporta el formato de video.
+                        </video>
+                        <p>Resumen de la Jornada</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="panel">
+                <div class="panel-header">
+                    <h2>Multimedia y Galerías</h2>
+                </div>
+                
+                <div class="galerias-desplegables">
+                    <details class="galeria-acordeon">
+                        <summary>Galería de Estadios <span class="icono-desplegable">▼</span></summary>
+                        <div class="galeria-contenido">
+                            <img src="imagenes/estadios/estadio_1.jpg" alt="Estadio 1">
+                            <img src="imagenes/estadios/estadio_2.jpg" alt="Estadio 2">
+                            <img src="imagenes/estadios/estadio_3.jpg" alt="Estadio 3">
+                        </div>
+                    </details>
+
+                    <details class="galeria-acordeon">
+                        <summary>Selecciones Nacionales <span class="icono-desplegable">▼</span></summary>
+                        <div class="galeria-contenido">
+                            <img src="imagenes/banderas/flag_usa.jpg" alt="Bandera de Estados Unidos">
+                            <img src="imagenes/banderas/flag_mex.jpg" alt="Bandera de Mexico">
+                            <img src="imagenes/banderas/flag_canada.jpg" alt="Bandera de Canada">
+                        </div>
+                    </details>
+
+                    <details class="galeria-acordeon">
+                        <summary>Mascotas Oficiales <span class="icono-desplegable">▼</span></summary>
+                        <div class="galeria-contenido">
+                            <img src="imagenes/mascotas/mascota_usa.jpg" alt="Mascota de Estados Unidos">
+                            <img src="imagenes/mascotas/mascota_mex.jpg" alt="Mascota de Mexico">
+                            <img src="imagenes/mascotas/mascota_canada.jpg" alt="Mascota de Canada">
+                        </div>
+                    </details>
+                </div>
+            </section>
+        </main>
+
+        <footer class="app-footer">
+            <p><strong>Nombre:</strong> Leonel Abaduca &nbsp;|&nbsp; <strong>Extensión:</strong> Puerto Ordaz &nbsp;|&nbsp; <strong>Cédula:</strong> 32.469.896 </p>
+        </footer>
+    </div>
+</body>
+</html>
