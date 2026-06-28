@@ -295,7 +295,7 @@ body {
     border: 1px solid var(--border-color);
 }
 
-/* --- 4. Sección de Videos --- */
+/* --- 4. Sección de Videos (Modificada para iFrames) --- */
 .video-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -311,14 +311,17 @@ body {
     text-align: center;
 }
 
-.video-card video {
+.video-card iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9; /* Mantiene el video en formato panorámico estándar */
+    border: none;
     border-radius: 6px;
     background: #000;
     margin-bottom: 0.8rem;
     transition: transform 0.3s ease;
 }
 
-.video-card video:hover {
+.video-card iframe:hover {
     transform: scale(1.02);
 }
 
