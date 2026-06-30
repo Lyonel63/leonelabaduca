@@ -10,8 +10,11 @@
 
     <audio id="audio-estadio" src="audios/audio_estadio.mp3"></audio>
     <audio id="audio-gol" src="audios/audio_gol.mp3"></audio>
-
-    <div class="app-contenedor">
+    <audio id="audio-inauguracion" src="audios/audio_inauguracion.mp3"></audio>
+    <audio id="audio-final" src="audios/audio_final.mp3"></audio>
+    <audio id="audio-usa" src="audios/estadio_usa.mp3"></audio>
+    <audio id="audio-mex" src="audios/estadio_mex.mp3"></audio>
+    <audio id="audio-can" src="audios/estadio_can.mp3"></audio> <div class="app-contenedor">
         
         <header class="hero-header">
             <div class="brillo-morado"></div>
@@ -24,6 +27,7 @@
                 <div class="panel-header">
                     <h2>Formato del Torneo y Eliminatorias</h2>
                 </div>
+                
                 <div class="stats-grid">
                     <div class="stat-box">
                         <span class="stat-num">48</span>
@@ -67,8 +71,11 @@
                 <div class="panel-header">
                     <h2>Resultados en Vivo y Calendario</h2>
                 </div>
+                
                 <div class="partidos-grid">
-                    <div class="match-card">
+                    <div class="match-card"
+                        onmouseenter="document.getElementById('audio-inauguracion').play()" 
+                        onmouseleave="document.getElementById('audio-inauguracion').pause();">
                         <div class="match-status status-azul">Gran Inauguración</div>
                         <div class="match-teams">
                             <div class="team"><span>México</span></div>
@@ -108,7 +115,9 @@
                         </div>
                     </div>
 
-                    <div class="match-card card-final">
+                    <div class="match-card card-final"
+                        onmouseenter="document.getElementById('audio-final').play()" 
+                        onmouseleave="document.getElementById('audio-final').pause();">
                         <div class="match-status status-dorado">Gran Final</div>
                         <div class="match-teams match-teams-final">
                             <div class="team"><span>Por definirse</span></div>
@@ -145,12 +154,21 @@
                 </div>
                 
                 <div class="galerias-desplegables">
+                    
                     <details class="galeria-acordeon">
                         <summary>Galería de Estadios <span class="icono-desplegable">▼</span></summary>
                         <div class="galeria-contenido">
-                            <img src="imagenes/estadios/estadio_1.jpg" alt="Estadio 1">
-                            <img src="imagenes/estadios/estadio_2.jpg" alt="Estadio 2">
-                            <img src="imagenes/estadios/estadio_3.jpg" alt="Estadio 3">
+                            <img src="imagenes/estadios/estadio_usa.jpg" alt="Estadio de Estados Unidos"
+                                onmouseenter="document.getElementById('audio-usa').play()" 
+                                onmouseleave="document.getElementById('audio-usa').pause();">
+                                
+                            <img src="imagenes/estadios/estadio_mex.jpg" alt="Estadio de Mexico"
+                                onmouseenter="document.getElementById('audio-mex').play()" 
+                                onmouseleave="document.getElementById('audio-mex').pause();">
+                                
+                            <img src="imagenes/estadios/estadio_can.jpg" alt="Estadio de Canada"
+                                onmouseenter="document.getElementById('audio-can').play()" 
+                                onmouseleave="document.getElementById('audio-can').pause();">
                         </div>
                     </details>
 
